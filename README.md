@@ -36,10 +36,10 @@ The Social Media Service is designed to handle post creation, image processing, 
 /social-media-service
 ├── src
 │   ├── config        # Configuration files
-│   ├── controllers   # Express.js controllers for handling API requests
 │   ├── consumers     # Kafka consumers for various background tasks
+│   ├── handlers      # Handles kafka messages & routes to service layer
 │   ├── models        # Mongoose models for MongoDB
-│   ├── routes        # API route definitions
+│   ├── producer      # Kafka producer to communicate other components
 │   ├── services      # Business logic for handling core features
 │   ├── utils         # Utility functions and helper methods
 │   └── index.ts      # Entry point for the application
@@ -61,10 +61,10 @@ The Social Media Service is designed to handle post creation, image processing, 
 
 3. Set up environment variables in a `.env.dev` file (see [Configuration](#configuration) section).
 
-4. Run the application:
+4. Run the consumer-service:
 
    ```bash
-   npm start
+   npm run start-dev
    ```
 
 ## Configuration
@@ -83,9 +83,9 @@ FILE_BASE_URL=http://localhost:3000/
 
 ## Usage
 
-### Starting the Server
+### Starting the consumer service
 
-To start the server, run:
+To start the consumers, run:
 
 ```bash
 npm run star-dev
