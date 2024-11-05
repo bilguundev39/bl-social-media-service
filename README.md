@@ -14,7 +14,7 @@ A scalable backend service built to support a social media platform's core funct
 
 ## Project Overview
 
-The Social Media Service is designed to handle post creation, image processing, and managing comments in a distributed system. This service uses Event-driven architecture to ensure reliable data processing across multiple consumers, which are responsible for managing posts, comments. Each services are loose-coupled communicate through message broker (Kafka). In real world I would separate into post-service, image-service, comment-service to handle its own operations.
+The Social Media Service is designed to handle post creation, image processing, and managing comments in a distributed system. This service uses Event-driven architecture to ensure reliable data processing across multiple consumers, which are responsible for managing posts, comments. Each services are loose-coupled communicate through message broker (Kafka). In real world I would separate into smaller independent services like post-service, image-service, comment-service to handle its own operations.
 
 ## Features
 
