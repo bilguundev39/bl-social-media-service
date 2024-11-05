@@ -1,7 +1,7 @@
 
 # Social Media Service
 
-A scalable backend service built to support a social media platform's core functionalities, including image uploading, comments, and more.
+A scalable backend service built to support a social media platform's core functionalities, including image resizing, comments, post reconcile.
 
 ## Table of Contents
 
