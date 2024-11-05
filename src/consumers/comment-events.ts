@@ -10,7 +10,7 @@ export const startCommentEventConsumer = async (): Promise<void> => {
     eachMessage: async ({ message }) => {
       if (message.value !== null) {
         const data = JSON.parse(message.value?.toString())
-        console.log('message from image processor consumer ------->')
+        console.log('message from comment event topic ------->')
         await eventHandler(data)
       }
     }

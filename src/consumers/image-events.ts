@@ -10,7 +10,7 @@ export const startImageEventConsumer = async (): Promise<void> => {
     eachMessage: async ({ message }) => {
       if (message.value !== null) {
         const data = JSON.parse(message.value?.toString())
-        console.log('message from image processor consumer ------->')
+        console.log('message from image events topic ------->')
         console.log(data)
         await eventHandler(data)
       }
